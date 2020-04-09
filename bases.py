@@ -19,11 +19,8 @@ def decode(digits, base):
     # Handle up to base 36 [0-9a-z]
     assert 2 <= base <= 36, 'base is out of range: {}'.format(base)
     # TODO: Decode digits from binary (base 2)
-    # ...
     # TODO: Decode digits from hexadecimal (base 16)
-    # ...
     # TODO: Decode digits from any base (2 up to 36)
-    # ...
 
 
 def encode(number, base):
@@ -50,7 +47,7 @@ def encode(number, base):
     rtn_str = ""
     for num in new_number:
         if num >= 10:
-            rtn_str += string.printable[num].capitalize()
+            rtn_str += string.printable[num]
         else:
             rtn_str += str(num)
     return rtn_str
